@@ -1,10 +1,10 @@
+import NavBar from "../components/NavBar";
 
-
-const NotFound = () =>{
-    return(
-        <div>Not Found: )</div>
-    )
-}
-
-
-export default NotFound;
+export default function NotFound() {
+    return (
+      <div>
+        <NavBar />
+        <h1>Page not found 😢</h1>
+      </div>
+    );
+  }

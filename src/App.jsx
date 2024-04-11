@@ -3,6 +3,8 @@ import Product from "./pages/product";
 import Pricing from "./pages/Pricing";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import AppLayout from "./pages/AppLayout";
+import Login from "./pages/Login";
 
 const App =() =>{
  
@@ -13,6 +15,8 @@ const App =() =>{
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<Product /> }/>
           <Route path="/pricing" element={<Pricing /> }/>
+          <Route path="/login"  element={<Login />} />
+          <Route path="/App" element={<AppLayout /> }/>
           <Route path="/*" element={<NotFound /> }/>
         </Routes>
       </BrowserRouter>
